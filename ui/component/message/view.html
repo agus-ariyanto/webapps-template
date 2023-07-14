@@ -1,0 +1,22 @@
+<div class="itr-dialog-backdrop {{active?'active':''}}">
+    <div class=" col-12 col-sm-6 col-md-4 p-3 m-auto mb-2 rounded-bottom bg-white border border-{{data.color}}">
+        <div class="mb-2 border-bottom text-{{data.color}}">
+            <span class="fa fa-{{data.icon}} pr-3"></span>{{data.title}}
+        </div>
+        <div class="mb-2 pt-3 pb-3 border-bottom text-{{data.color}}">
+            {{data.body}}
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-secondary btn-sm" ng-show="data.confirm" ng-click="cancel()">
+                    <span class="fa fa-times"></span>
+                    Cancel</button>
+            </div>
+            <div class="col-6 text-end">
+                <button type="button" class="btn btn-{{data.color}} btn-sm" ng-click="ok()">
+                    <span class="fa fa-check"></span>&nbsp;&nbsp;&nbsp;Ok&nbsp;&nbsp;&nbsp;
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
