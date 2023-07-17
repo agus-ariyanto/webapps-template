@@ -1,23 +1,21 @@
 <?php
 $db=array(
-     'host'=>'127.0.0.1',
-     'user'=>'deerformera',
-     'pwd' =>'blankspace',
-     'name'=>'itransport',
+     'host'=>'localhost',
+     'user'=>'root',
+     'pwd' =>'admin',
+     'name'=>'clynique',
      'offset' =>'500',
     );
 
-$prefix='ep';
-        */  
-$noauth=array('image','login','gw');
+$prefix='Cly';
+        
+$noauth=array('image','login');
 $jwt=array(
     'alg'=>'HS256',
-    'key'=>'itransport',
+    'key'=>'clynique',
 );
 
 /* dev_mode -> develop mode
  * beri nilai selain satu untuk production
  */
 define('DEV_MODE',1);
-
-$appID='6b0e2cd8642b299510b386fee6b183a279067d85';

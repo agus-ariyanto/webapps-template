@@ -8,9 +8,9 @@ class ClyAuth extends Model{
         'usr'=>'VARCHAR(128)',
         'nama'=>'VARCHAR(128)',
         'pwd'=>'VARCHAR(128)',
-        'token'=>'TEXT',
         'grup_id'=>'INT',
-        'clinic_id'=>'INT DEFAULT 0',
+        'token'=>'TEXT',
+        'clinic_id'=>'INT',
     );
 
     /*
@@ -22,37 +22,36 @@ class ClyAuth extends Model{
     	protected $firstdata=array(
             array(
                 'id'=>'1',
-                'usr'=>'admin',
-                'nama'=>'ADMIN',
+    		'usr'=>'admin',
+                'nama'=>'admin',
                 'pwd'=>'d033e22ae348aeb5660fc2140aec35850c4da997',
                 'grup_id'=>'1',
                 'clinic_id'=>'1',
-            ),
-            array(
+    		),
+           array(
                 'id'=>'2',
-                'usr'=>'office',
-                'nama'=>'OFFICE',
+    		'usr'=>'office',
+                'nama'=>'office',
                 'pwd'=>'d033e22ae348aeb5660fc2140aec35850c4da997',
                 'grup_id'=>'2',
                 'clinic_id'=>'1',
-            ),
-            array(
+    		),     
+          array(
                 'id'=>'3',
-                'usr'=>'polly',
-                'nama'=>'POLLY',
+    		'usr'=>'poli',
+                'nama'=>'poli',
                 'pwd'=>'d033e22ae348aeb5660fc2140aec35850c4da997',
                 'grup_id'=>'3',
                 'clinic_id'=>'1',
-            ),
-            array(
+    		),  
+          array(
                 'id'=>'4',
-                'usr'=>'apoteker',
-                'nama'=>'APOTEKER',
+    		'usr'=>'apotek',
+                'nama'=>'apotek',
                 'pwd'=>'d033e22ae348aeb5660fc2140aec35850c4da997',
                 'grup_id'=>'4',
                 'clinic_id'=>'1',
-            ),
-            
+    		),      
         );
 
 }

@@ -1,35 +1,15 @@
-<style>
-</style>
-<img src="assets/img/itransport-background.png" class="itr-login-backdrop">
-<form ng-submit="signin()" class="itr-form-login" style="min-height:50vh">
-    <div class="mb-3 text-center" style="padding-top:20px">
-        <img src="assets/img/itransport-logo.png" class="itr-login-img">
-        <!-- <img src="assets/img/itransport-logo.png" class="itr-login-img"> -->
-        <!-- <div class="itr-login-brand">
-            iTRANSPORT
-        </div> -->
+<form class="col-4" ng-submit="masuk()">
+    <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" ng-model="data.username">
     </div>
-
-    <div class="mb-3">
-        <input type="text" class="form-control itr-login-input" ng-model="data.username" placeholder="nama:" required>
+     <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" ng-model="data.password">
     </div>
-    <div class="mb-1"> 
-        <input type="{{showpassword?'text':'password'}}" class="form-control itr-login-input" ng-model="data.password" placeholder="password:" required>
-    </div>
-    <div class="form-check mb-4">
-        <input class="form-check-input" id="showPwd" type="checkbox" ng-model="showpassword">
-        <label class="form-check-label" for="showPwd">Show Password</label>
-    </div>
-    <div class="mb-3 text-end">
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary itr-login-submit">
-               LOGIN
-            </button>
-        </div>
+    <div class="form-group d-grid">
+        <button type="submit" class="btn btn-primary">
+            <span class="fa fa-paper-plane">SUBMIT</span>
+        </button>    
     </div>
 </form>
-<div class="itr-login-tag text-center">
-    <div class="itr-login-title">i&nbsp;&nbsp;-&nbsp;&nbsp;T&nbsp;r&nbsp;a&nbsp;n&nbsp;s&nbsp;p&nbsp;o&nbsp;r&nbsp;t</div>
-    <div class="itr-login-subtitle">"&nbsp;C&nbsp;o&nbsp;n&nbsp;n&nbsp;e&nbsp;c&nbsp;t&nbsp;i&nbsp;n&nbsp;g&nbsp;&nbsp;U&nbsp;s&nbsp;e&nbsp;r&nbsp;s&nbsp;"</div>
-</div>
-<div alt-component="master/account/dialog" data-scope="dialogAccount"></div>

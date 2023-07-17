@@ -1,0 +1,11 @@
+.itr-dialog-backdrop{
+    position:absolute;
+    top:-100vh;
+    margin:auto;
+    display:block;
+}
+
+.itr-dialog-backdrop.active{
+    top:0;
+}
+    
